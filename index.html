@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Display</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="weather-box">
+      <h2>🌤️ Weather Display</h2>
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button onclick="getWeather()">Search</button>
+      <div id="weatherData" class="weather-data hidden">
+        <div class="icon"><i id="weatherIcon" class="fas fa-cloud-sun"></i></div>
+        <div class="info">
+          <h3 id="cityName"></h3>
+          <p><span id="temp"></span>°C</p>
+          <p id="description"></p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+        </div>
+      </div>
+      <p id="error" class="error"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
